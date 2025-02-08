@@ -47,30 +47,35 @@ export const CHAT_SETTING_LIMITS: Record<LLMID, ChatSettingLimits> = {
   },
 
   // GOOGLE MODELS
-  
+  "gemini-2.0-flash": {
+    MIN_TEMPERATURE: 0.0,
+    MAX_TEMPERATURE: 2.0,
+    MAX_TOKEN_OUTPUT_LENGTH: 8192,
+    MAX_CONTEXT_LENGTH: 1040384
+  },
+  "gemini-2.0-flash-lite-preview-02-05": {
+    MIN_TEMPERATURE: 0.0,
+    MAX_TEMPERATURE: 2.0,
+    MAX_TOKEN_OUTPUT_LENGTH: 8192,
+    MAX_CONTEXT_LENGTH: 1040384
+  },
   "gemini-1.5-flash": {
     MIN_TEMPERATURE: 0.0,
-    MAX_TEMPERATURE: 1.0,
+    MAX_TEMPERATURE: 2.0,
     MAX_TOKEN_OUTPUT_LENGTH: 8192,
     MAX_CONTEXT_LENGTH: 1040384
   },
-  "gemini-1.5-pro-latest": {
+  "gemini-1.5-flash-8b": {
     MIN_TEMPERATURE: 0.0,
-    MAX_TEMPERATURE: 1.0,
+    MAX_TEMPERATURE: 2.0,
     MAX_TOKEN_OUTPUT_LENGTH: 8192,
     MAX_CONTEXT_LENGTH: 1040384
   },
-  "gemini-pro": {
+  "gemini-1.5-pro": {
     MIN_TEMPERATURE: 0.0,
-    MAX_TEMPERATURE: 1.0,
-    MAX_TOKEN_OUTPUT_LENGTH: 2048,
-    MAX_CONTEXT_LENGTH: 30720
-  },
-  "gemini-pro-vision": {
-    MIN_TEMPERATURE: 0.0,
-    MAX_TEMPERATURE: 1.0,
-    MAX_TOKEN_OUTPUT_LENGTH: 4096,
-    MAX_CONTEXT_LENGTH: 12288
+    MAX_TEMPERATURE: 2.0,
+    MAX_TOKEN_OUTPUT_LENGTH: 8192,
+    MAX_CONTEXT_LENGTH: 2097152
   },
 
   // MISTRAL MODELS
@@ -100,27 +105,33 @@ export const CHAT_SETTING_LIMITS: Record<LLMID, ChatSettingLimits> = {
   },
 
   // GROQ MODELS
-  "llama3-8b-8192": {
+  "deepseek-r1-distill-llama-70b": {
     MIN_TEMPERATURE: 0.0,
     MAX_TEMPERATURE: 1.0,
     MAX_TOKEN_OUTPUT_LENGTH: 8192,
     MAX_CONTEXT_LENGTH: 8192
   },
-  "llama3-70b-8192": {
+  "deepseek-r1-distill-llama-70b-specdec": {
     MIN_TEMPERATURE: 0.0,
     MAX_TEMPERATURE: 1.0,
     MAX_TOKEN_OUTPUT_LENGTH: 8192,
-    MAX_CONTEXT_LENGTH: 8192
+    MAX_CONTEXT_LENGTH: 16384
   },
-  "mixtral-8x7b-32768": {
-    MIN_TEMPERATURE: 0.0,
-    MAX_TEMPERATURE: 1.0,
-    MAX_TOKEN_OUTPUT_LENGTH: 4096,
-    MAX_CONTEXT_LENGTH: 32768
-  },
-  "gemma-7b-it": {
+  "gemma2-9b-it": {
     MIN_TEMPERATURE: 0.0,
     MAX_TEMPERATURE: 2.0,
+    MAX_TOKEN_OUTPUT_LENGTH: 8192,
+    MAX_CONTEXT_LENGTH: 8192
+  },
+  "llama-3.3-70b-versatile": {
+    MIN_TEMPERATURE: 0.0,
+    MAX_TEMPERATURE: 1.0,
+    MAX_TOKEN_OUTPUT_LENGTH: 8192,
+    MAX_CONTEXT_LENGTH: 8192
+  },
+  "llama-3.3-70b-specdec": {
+    MIN_TEMPERATURE: 0.0,
+    MAX_TEMPERATURE: 1.0,
     MAX_TOKEN_OUTPUT_LENGTH: 8192,
     MAX_CONTEXT_LENGTH: 8192
   },

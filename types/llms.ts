@@ -18,10 +18,11 @@ export type OpenAILLMID =
 
 // Google Models
 export type GoogleLLMID =
-  | "gemini-pro" // Gemini Pro
-  | "gemini-pro-vision" // Gemini Pro Vision
-  | "gemini-1.5-pro-latest" // Gemini 1.5 Pro
+  | "gemini-2.0-flash" // Gemini 2.0 Flash
+  | "gemini-2.0-flash-lite-preview-02-05" // Gemini 2.0 Flash-Lite Preview
   | "gemini-1.5-flash" // Gemini 1.5 Flash
+  | "gemini-1.5-flash-8b" // Gemini 1.5 Flash-8B
+  | "gemini-1.5-pro" // Gemini 1.5 Pro
 
 // Anthropic Models
 export type AnthropicLLMID =
@@ -40,10 +41,11 @@ export type MistralLLMID =
   | "mistral-large-latest" // Mistral Large
 
 export type GroqLLMID =
-  | "llama3-8b-8192" // LLaMA3-8b
-  | "llama3-70b-8192" // LLaMA3-70b
-  | "mixtral-8x7b-32768" // Mixtral-8x7b
-  | "gemma-7b-it" // Gemma-7b IT
+  | "deepseek-r1-distill-llama-70b" // DeepSeek R1
+  | "deepseek-r1-distill-llama-70b-specdec" // DeepSeek R1 SpecDec
+  | "gemma2-9b-it" // Gemma2 9B
+  | "llama-3.3-70b-versatile" // LLaMA3.3 70B Versatile
+  | "llama-3.3-70b-specdec" // LLaMA3.3 70B SpecDec
 
 // Perplexity Models (UPDATED 1/31/24)
 export type PerplexityLLMID =
